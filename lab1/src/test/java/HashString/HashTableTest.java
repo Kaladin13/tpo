@@ -4,12 +4,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.CsvFileSource;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.NoSuchElementException;
-import java.util.Random;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -56,7 +53,7 @@ class HashTableTest {
     }
 
     @Test
-    void get() {
+    void getTest() {
         assertThrows(NoSuchElementException.class, () -> hashTable.get("non-existing-key").orElseThrow());
 
         String key = "new-key";
@@ -65,6 +62,6 @@ class HashTableTest {
     }
 
     @Test
-    void remove() {
+    void removeTest() {
     }
 }
