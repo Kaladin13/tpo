@@ -1,6 +1,6 @@
 package org.example.functions.logarithms;
 
-import org.example.functions.BaseFunction;
+import org.example.functions.common.BaseFunction;
 
 public class Ln extends BaseFunction {
 
