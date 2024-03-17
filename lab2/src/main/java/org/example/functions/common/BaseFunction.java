@@ -1,4 +1,4 @@
-package org.example.functions;
+package org.example.functions.common;
 
 abstract public class BaseFunction {
     protected final double accuracy;

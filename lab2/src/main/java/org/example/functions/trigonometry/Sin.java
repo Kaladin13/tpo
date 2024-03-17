@@ -1,6 +1,6 @@
 package org.example.functions.trigonometry;
 
-import org.example.functions.BaseFunction;
+import org.example.functions.common.BaseFunction;
 
 public class Sin extends BaseFunction {
     public Sin(double accuracy) {

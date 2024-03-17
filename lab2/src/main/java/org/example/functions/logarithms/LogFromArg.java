@@ -1,18 +1,14 @@
 package org.example.functions.logarithms;
 
-import org.example.functions.BaseFunction;
+import org.example.functions.common.BaseFunction;
 
 public class LogFromArg extends BaseFunction {
-    public double getBase() {
-        return base;
-    }
-
     private final double base;
     private final double lnBase;
     private final Ln ln;
 
     public LogFromArg(double accuracy, double base, Ln ln) {
-        super(accuracy, "log_from_arg");
+        super(accuracy, String.format("log_%f", base));
         this.base = base;
         this.ln = ln;
 
@@ -21,6 +17,10 @@ public class LogFromArg extends BaseFunction {
         } else {
             this.lnBase = this.ln.compute(this.base);
         }
+    }
+
+    public double getBase() {
+        return base;
     }
 
     @Override

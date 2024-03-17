@@ -1,8 +1,6 @@
 package org.example.functions.logarithms;
 
 import com.opencsv.CSVReader;
-import org.example.functions.trigonometry.Sin;
-import org.example.functions.trigonometry.TrigonomentryMocksFactory;
 
 import java.io.Reader;
 import java.nio.file.Files;
