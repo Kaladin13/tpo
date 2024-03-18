@@ -38,6 +38,8 @@ public class Main {
         ModuleLogger moduleLogger = new ModuleLogger(logger);
 
         moduleLogger.logModule(mainFunction, -Math.PI, Math.PI, Math.PI / 4);
-        moduleLogger.logModule(sin, -Math.PI, Math.PI, Math.PI / 4);
+        moduleLogger.logModule(cosecant, -Math.PI, Math.PI, Math.PI / 4);
+        moduleLogger.logModule(ln, 1, 32, 1);
+
     }
 }
